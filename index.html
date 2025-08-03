@@ -1,0 +1,1325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shyam Sundhar G - Flutter & AI/ML Developer</title>
+    <meta name="author" content="Shyam Sundhar G">
+    <link rel="icon" href="assets/images/prf.jpg" sizes="16x16">
+    <meta name="description" content="Portfolio of Shyam Sundhar G - Flutter Mobile App Developer and AI/ML Engineer">
+    <meta name="keywords" content="Flutter Developer, AI ML Engineer, Mobile App Development, Machine Learning">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    
+    <!-- Mobile Detection Script -->
+    <script>
+        // Inline mobile detection for immediate execution
+        (function() {
+            const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+            const isSmallScreen = window.innerWidth <= 768;
+            const alertDismissed = localStorage.getItem('mobileAlertDismissed');
+            
+            if ((isMobile || isSmallScreen) && !alertDismissed) {
+                document.documentElement.classList.add('mobile-detected');
+            }
+        })();
+    </script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader">
+            <div class="code-brackets">
+                <span>&lt;</span>
+                <span class="flutter-logo">shyamgsundhar</span>
+                <span>&gt;</span>
+            </div>
+            <div class="ai-animation">
+                <div class="neural-network"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">
+                    <span class="logo-bracket">&lt;</span>
+                    <span class="logo-name">shyamgsundhar</span>
+                    <span class="logo-bracket">/&gt;</span>
+                </a>
+            </div>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            
+            <!-- <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon" id="theme-icon"></i>
+                </button>
+            </div> -->
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="floating-elements">
+                <div class="floating-shape flutter-blue"></div>
+                <div class="floating-shape ai-purple"></div>
+                <div class="floating-shape mobile-green"></div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-line">Hi, I'm</span>
+                        <span class="title-name gradient-text" style="font-size: 48px;">Shyam Sundhar G</span>
+                        <span class="title-role">Flutter Developer & AI/ML Engineer</span>
+                    </h1>
+                    
+                    <p class="hero-description" style="justify-content: center;">
+                        I build intelligent mobile applications and machine learning solutions that solve real-world problems. 
+                        Passionate about creating user-friendly apps with cutting-edge AI integration.
+                    </p>
+                    
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary" style="font-size: 17px;">
+                            <i class="fas fa-code"></i>
+                            View My Work
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <i class="fas fa-envelope"></i>
+                            Get In Touch
+                        </a>
+                    </div>
+                    
+                    <div class="hero-social">
+                        <a href="https://github.com/shyamgsundhar" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/shyamgsundhar" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://leetcode.com/shyamgsundhar" target="_blank" class="social-link">
+                            <i class="fas fa-code"></i>
+                        </a>
+                        <a href="mailto:shyamgsundhar@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="profile-section">
+                        <div class="profile-image">
+                            <img src="assets/images/prf.jpg" alt="Shyam Sundhar G" class="profile-photo">
+                            <div class="profile-ring"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-graphics">
+                        <div class="floating-tech-icons">
+                            <div class="tech-icon flutter-icon">
+                                <i class="fa fa-mobile" aria-hidden="false"></i>
+                            </div>
+                            <div class="tech-icon ai-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="tech-icon mobile-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div class="tech-icon code-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Showcase Section -->
+    <section class="showcase section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Expertise</h2>
+                <p class="section-subtitle">Technologies and solutions I create</p>
+            </div>
+            
+            <div class="showcase-content">
+                <div class="showcase-item">
+                    <div class="showcase-visual">
+                        <div class="code-window">
+                            <div class="window-header">
+                                <div class="window-controls">
+                                    <span class="control close"></span>
+                                    <span class="control minimize"></span>
+                                    <span class="control maximize"></span>
+                                </div>
+                                <div class="window-title">
+                                    <i class="fab fa-flutter"></i>
+                                    main.dart
+                                </div>
+                            </div>
+                            <div class="code-content">
+                                <pre class="code-block">
+<span class="code-comment">// Building the future with Flutter & AI</span>
+<span class="code-keyword">class</span> <span class="code-class">Developer</span> <span class="code-bracket">{</span>
+  <span class="code-keyword">final</span> <span class="code-type">String</span> name = <span class="code-string">'Shyam Sundhar G'</span>;
+  <span class="code-keyword">final</span> <span class="code-type">List&lt;String&gt;</span> expertise = [
+    <span class="code-string">'Flutter Development'</span>,
+    <span class="code-string>'AI/ML Integration'</span>,
+    <span class="code-string>'IoT Solutions'</span>,
+    <span class="code-string">'Cross-Platform Apps'</span>
+  ];
+  
+  <span class="code-keyword">Future&lt;void&gt;</span> <span class="code-function">buildInnovativeApps</span>() <span class="code-keyword">async</span> <span class="code-bracket">{</span>
+    <span class="code-keyword">await</span> <span class="code-function">integrateMachineLearning</span>();
+    <span class="code-keyword">await</span> <span class="code-function">optimizeUserExperience</span>();
+    <span class="code-function">print</span>(<span class="code-string>'Creating amazing solutions!'</span>);
+  <span class="code-bracket">}</span>
+<span class="code-bracket">}</span>
+                                </pre>
+                            </div>
+                            <div class="code-footer">
+                                <div class="code-stats">
+                                    <span><i class="fas fa-circle" style="color: #4caf50;"></i> Active</span>
+                                    <span><i class="fas fa-code-branch"></i> main</span>
+                                    <span><i class="fas fa-bug"></i> 0 errors</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="showcase-text">
+                        <h3>Clean, Efficient Code</h3>
+                        <p style="justify-content: center;">I write maintainable, scalable code that follows best practices and industry standards. Every line is crafted with performance and readability in mind.</p>
+                    </div>
+                </div>
+
+                <div class="showcase-item reverse">
+                    <div class="showcase-visual">
+                        <div class="mobile-showcase">
+                            <div class="phone-device">
+                                <div class="phone-bezel">
+                                    <div class="phone-screen">
+                                        <div class="status-bar">
+                                            <div class="status-left">
+                                                <span class="time">9:41</span>
+                                            </div>
+                                            <div class="status-right">
+                                                <i class="fas fa-signal"></i>
+                                                <i class="fas fa-wifi"></i>
+                                                <i class="fas fa-battery-full"></i>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="app-interface">
+                                            <div class="app-header">
+                                                <div class="header-content">
+                                                    <div class="app-logo">
+                                                        <div class="logo-icon">
+                                                            <i class="fas fa-code"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="app-title">
+                                                        <h3>CodePlay Connect</h3>
+                                                        <p>Learn Coding Interactively</p>
+                                                    </div>
+                                                </div>
+                                                <div class="app-stats">
+                                                    <div class="stat-badge">
+                                                        <i class="fas fa-star"></i>
+                                                        <span>4.7</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="course-grid">
+                                                <div class="course-card active">
+                                                    <div class="course-icon python">
+                                                        <i class="fas fa-play"></i>
+                                                    </div>
+                                                    <div class="course-info">
+                                                        <h4>Basic Programs</h4>
+                                                        <div class="progress-info">
+                                                            <span>12/15 lessons</span>
+                                                            <div class="progress-bar">
+                                                                <div class="progress" style="width: 80%"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="course-badge">
+                                                        <span>80%</span>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="course-card">
+                                                    <div class="course-icon java">
+                                                        <i class="fas fa-layer-group"></i>
+                                                    </div>
+                                                    <div class="course-info">
+                                                        <h4>Intermediate Programs</h4>
+                                                        <div class="progress-info">
+                                                            <span>7/20 lessons</span>
+                                                            <div class="progress-bar">
+                                                                <div class="progress" style="width: 35%"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="course-badge">
+                                                        <span>35%</span>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="course-card">
+                                                    <div class="course-icon js">
+                                                        <i class="fas fa-graduation-cap"></i>
+                                                    </div>
+                                                    <div class="course-info">
+                                                        <h4>Interview Programs</h4>
+                                                        <div class="progress-info">
+                                                            <span>0/25 lessons</span>
+                                                            <div class="progress-bar">
+                                                                <div class="progress" style="width: 0%"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="course-badge new">
+                                                        <span>NEW</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+
+                                            <div class="achievements-section">
+                                                <div class="section-title">
+                                                    <h4>Recent Achievements</h4>
+                                                    <span class="view-all">View All</span>
+                                                </div>
+                                                <div class="achievement-list">
+                                                    <div class="achievement-item">
+                                                        <div class="achievement-icon first-code">
+                                                            <i class="fas fa-medal"></i>
+                                                        </div>
+                                                        <div class="achievement-text">
+                                                            <h5>Basic Complete</h5>
+                                                            <span>Completed Basic Programs module!</span>
+                                                        </div>
+                                                        <div class="achievement-time">1w</div>
+                                                    </div>
+                                                    
+                                                    <div class="achievement-item">
+                                                        <div class="achievement-icon streak">
+                                                            <i class="fas fa-code"></i>
+                                                        </div>
+                                                        <div class="achievement-text">
+                                                            <h5>Mobile Dev Master</h5>
+                                                            <span>Unlocked mobile development skills!</span>
+                                                        </div>
+                                                        <div class="achievement-time">3d</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="action-buttons">
+                                                <a href="https://play.google.com/store/apps/details?id=com.codefirst.codeplay&hl=en_IN" target="_blank" class="btn-primary">
+                                                    <i class="fab fa-google-play"></i>
+                                                    View on Play Store
+                                                </a>
+                                                <button class="btn-secondary">
+                                                    <i class="fas fa-code"></i>
+                                                    Practice
+                                                </button>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="app-footer">
+                                            <div class="nav-item active">
+                                                <i class="fas fa-home"></i>
+                                                <span>Home</span>
+                                            </div>
+                                            <div class="nav-item">
+                                                <i class="fas fa-book"></i>
+                                                <span>Courses</span>
+                                            </div>
+                                            <div class="nav-item">
+                                                <i class="fas fa-code"></i>
+                                                <span>Practice</span>
+                                            </div>
+                                            <div class="nav-item">
+                                                <i class="fas fa-user"></i>
+                                                <span>Profile</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="phone-shadow"></div>
+                            </div>
+                            
+                            <div class="app-info-cards">
+                                <div class="info-card downloads">
+                                    <div class="card-icon">
+                                        <i class="fas fa-download"></i>
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="card-number">500+</div>
+                                        <div class="card-label">Downloads</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="info-card rating">
+                                    <div class="card-icon">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="card-number">4.7</div>
+                                        <div class="card-label">Rating</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="info-card users">
+                                    <div class="card-icon">
+                                        <i class="fas fa-comment"></i>
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="card-number">15</div>
+                                        <div class="card-label">Reviews</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="showcase-text">
+                        <h3>Mobile Excellence</h3>
+                        <p>Creating beautiful, intuitive mobile applications that users love. From concept to deployment, I ensure every interaction is smooth and engaging.</p>
+                    </div>
+                </div>
+
+                <div class="showcase-item">
+                    <div class="showcase-visual">
+                        <div class="ai-visualization">
+                            <div class="neural-dashboard">
+                                <div class="dashboard-header">
+                                    <div class="header-left">
+                                        <h4><i class="fas fa-brain"></i> Neural Network Training</h4>
+                                        <span class="model-type">Deep Learning Model</span>
+                                    </div>
+                                    <div class="training-status">
+                                        <div class="status-indicator active"></div>
+                                        <span>Training in Progress</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="training-progress">
+                                    <div class="progress-section">
+                                        <div class="progress-info">
+                                            <span class="progress-label">Training Progress</span>
+                                            <span class="progress-percentage">73%</span>
+                                        </div>
+                                        <div class="progress-bar-container">
+                                            <div class="progress-bar-bg">
+                                                <div class="progress-bar-fill" style="width: 73%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="epoch-info">
+                                            <span>Epoch 73/100 • Loss: 0.045 • Accuracy: 96.8%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="neural-network-viz">
+                                    <div class="network-layer input-layer">
+                                        <div class="layer-label">Input</div>
+                                        <div class="neurons">
+                                            <div class="neuron active"></div>
+                                            <div class="neuron active"></div>
+                                            <div class="neuron active"></div>
+                                            <div class="neuron"></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="connections">
+                                        <div class="connection-line active"></div>
+                                        <div class="connection-line"></div>
+                                        <div class="connection-line active"></div>
+                                        <div class="connection-line active"></div>
+                                    </div>
+                                    
+                                    <div class="network-layer hidden-layer">
+                                        <div class="layer-label">Hidden</div>
+                                        <div class="neurons">
+                                            <div class="neuron active"></div>
+                                            <div class="neuron active"></div>
+                                            <div class="neuron"></div>
+                                            <div class="neuron active"></div>
+                                            <div class="neuron active"></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="connections">
+                                        <div class="connection-line active"></div>
+                                        <div class="connection-line active"></div>
+                                        <div class="connection-line"></div>
+                                        <div class="connection-line active"></div>
+                                    </div>
+                                    
+                                    <div class="network-layer output-layer">
+                                        <div class="layer-label">Output</div>
+                                        <div class="neurons">
+                                            <div class="neuron active"></div>
+                                            <div class="neuron"></div>
+                                            <div class="neuron active"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="performance-metrics">
+                                    <div class="metric-row">
+                                        <div class="metric-item">
+                                            <div class="metric-icon accuracy">
+                                                <i class="fas fa-target"></i>
+                                            </div>
+                                            <div class="metric-content">
+                                                <div class="metric-value">96.8%</div>
+                                                <div class="metric-label">Accuracy</div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="metric-item">
+                                            <div class="metric-icon loss">
+                                                <i class="fas fa-chart-line"></i>
+                                            </div>
+                                            <div class="metric-content">
+                                                <div class="metric-value">0.045</div>
+                                                <div class="metric-label">Loss</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="metric-row">
+                                        <div class="metric-item">
+                                            <div class="metric-icon speed">
+                                                <i class="fas fa-tachometer-alt"></i>
+                                            </div>
+                                            <div class="metric-content">
+                                                <div class="metric-value">1.2s</div>
+                                                <div class="metric-label">Per Epoch</div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="metric-item">
+                                            <div class="metric-icon dataset">
+                                                <i class="fas fa-database"></i>
+                                            </div>
+                                            <div class="metric-content">
+                                                <div class="metric-value">50K</div>
+                                                <div class="metric-label">Samples</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="showcase-text">
+                        <h3>AI & Machine Learning</h3>
+                        <p style="justify-content: center;">Building intelligent systems with deep learning models, data processing pipelines, and real-time inference capabilities. From data preprocessing to model deployment, I create end-to-end ML solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know me better</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-card">
+                        <h3>My Journey</h3>
+                        <p style="text-align: justify;">
+    I'm an aspiring engineer with experience in mobile app development, machine learning, IoT, and full-stack development. 
+    I enjoy building smart, user-friendly applications that solve real problems. I'm looking for opportunities to apply 
+    my skills in a dynamic environment where I can learn, grow, and contribute to meaningful projects.
+</p>
+
+                    </div>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number">8.71</div>
+                            <div class="stat-label">CGPA</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">20+</div>
+                            <div class="stat-label">Projects</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">2+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">App Downloads</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-visual">
+                    <div class="tech-orbit">
+                        <div class="orbit-center">
+                            <i class="fab fa-flutter"></i>
+                        </div>
+                        <div class="orbit-ring">
+                            <div class="orbit-item" data-tech="AI/ML">🤖</div>
+                            <div class="orbit-item" data-tech="Mobile">📱</div>
+                            <div class="orbit-item" data-tech="IoT">🔗</div>
+                            <div class="orbit-item" data-tech="Web">🌐</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Education</h2>
+                <p class="section-subtitle">My academic journey</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-period">November 2022 – April 2026</div>
+                        <h3>Bachelor of Computer Science Engineering (AI & ML)</h3>
+                        <h4>KPR Institute of Engineering and Technology, Coimbatore</h4>
+                        <p class="timeline-grade">CGPA: 8.71</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-period">June 2021 - March 2022</div>
+                        <h3>Higher Secondary Certificate (+1 & +2)</h3>
+                        <h4>Jaycess Matriculation Higher Secondary School, Erode</h4>
+                        <p class="timeline-grade">Percentage: 91.8% (Computer Science & Mathematics)</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-period">June 2019 - March 2020</div>
+                        <h3>Secondary School Leaving Certificate</h3>
+                        <h4>Jaycess Matriculation Higher Secondary School, Erode</h4>
+                        <p class="timeline-grade">Percentage: 97.4%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <p class="section-subtitle">Technologies I work with</p>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Mobile Development</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Flutter</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Dart</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Firebase</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-robot"></i>
+                        <h3>AI & Machine Learning</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">TensorFlow</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Scikit-Learn</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Programming Languages</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Dart</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Java</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-tools"></i>
+                        <h3>Tools & Platforms</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">VS Code</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">GitHub</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Figma</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Experience</h2>
+                <p class="section-subtitle">My professional journey</p>
+            </div>
+            
+            <div class="experience-timeline">
+                <div class="experience-item">
+                    <div class="experience-date">October 2024 - January 2025</div>
+                    <div class="experience-content">
+                        <h3>Mobile Application Developer with AI & Hardware Integration Intern</h3>
+                        <h4>Ozotec EV, Coimbatore</h4>
+                        <ul>
+                            <li>Designed and deployed mobile apps for IoT-based Battery Management Systems</li>
+                            <li>Integrated hardware and software through Bluetooth Low Energy (BLE)</li>
+                            <li>Optimized application performance, ensuring seamless integration with IoT devices</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">BLE</span>
+                            <span class="tech-tag">IoT</span>
+                            <span class="tech-tag">MQTT</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="experience-item">
+                    <div class="experience-date">November 2023 - October 2024</div>
+                    <div class="experience-content">
+                        <h3>Mobile Application Developer Intern</h3>
+                        <h4>The Reciprocal Solutions, Coimbatore</h4>
+                        <ul>
+                            <li>Built scalable mobile applications using Flutter and Firebase</li>
+                            <li>Conducted UX/UI testing, reducing app bugs by 15%</li>
+                            <li>Worked with 4+ cross-functional teams to enhance user experience</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">UI/UX</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="experience-item">
+                    <div class="experience-date">November 2019 - September 2021</div>
+                    <div class="experience-content">
+                        <h3>Fullstack Developer & UI UX Designer</h3>
+                        <h4>Techrodai, Erode</h4>
+                        <ul>
+                            <li>Delivered end-to-end web and mobile solutions, including backend API integration</li>
+                            <li>Improved app scalability and user engagement by 25%</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Full Stack</span>
+                            <span class="tech-tag">UI/UX</span>
+                            <span class="tech-tag">API Integration</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Some of my best work</p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card featured">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://rb.gy/kif9pu" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-bg ai-gradient"></div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">AI/ML Project</div>
+                        <h3>Vista – Virtual Intelligence Search for TNEA Admission</h3>
+                        <p>AI-powered college recommendation system that analyzes TNEA cutoff scores and other attributes with high efficiency and accuracy.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">LangChain</span>
+                            <span class="tech-tag">Streamlit</span>
+                            <span class="tech-tag">AI</span>
+                        </div>
+                        <div class="project-date">January 2025</div>
+                    </div>
+                </div>
+                
+                <div class="project-card featured">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://rb.gy/8pozds" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-bg flutter-gradient"></div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">AI/IoT Project</div>
+                        <h3>SmartGuard</h3>
+                        <p>AI-based SmartGuard system using Battery Management data to analyze patterns and predict potential failures with real-time alerts.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">MQTT</span>
+                        </div>
+                        <div class="project-date">December 2024</div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-bg iot-gradient"></div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">IoT Project</div>
+                        <h3>Conzo Telematrix</h3>
+                        <p>Interactive Battery Management System (BMS) application fetching data via MQTT server during internship at Ozotec.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">MQTT</span>
+                            <span class="tech-tag">REST API</span>
+                        </div>
+                        <div class="project-date">November 2024</div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-bg mobile-gradient"></div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Mobile App</div>
+                        <h3>Conzo BT</h3>
+                        <p>Interactive BMS application with Bluetooth Low Energy integration, optimizing data transmission efficiency.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">BLE</span>
+                            <span class="tech-tag">Serial Communication</span>
+                        </div>
+                        <div class="project-date">October 2024</div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://rb.gy/d775nc" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-bg education-gradient"></div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Education App</div>
+                        <h3>CodePlay Connect</h3>
+                        <p>Comprehensive mobile coding education app with Basic, Intermediate, and Advanced programs. Features interview preparation modules and has achieved 4.7-star rating with 500+ downloads on Play Store.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">REST API</span>
+                        </div>
+                        <div class="project-date">August 2023</div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://rb.gy/ul6wps" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-bg fitness-gradient"></div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Fitness App</div>
+                        <h3>FitCoin</h3>
+                        <p>Fitness app rewarding users for physical activity. Winner of StartupTN SDG Hackathon and Top 10 Finalist at IEEE Project EXPO.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">AI Recognition</span>
+                        </div>
+                        <div class="project-date">December 2022</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Achievements & Recognition</h2>
+                <p class="section-subtitle">Awards and accomplishments</p>
+            </div>
+            
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>CodeVita'25 Top 50</h3>
+                    <p>Top 50 among 108 teams with Project SmartGuard</p>
+                    <span class="achievement-date">January 2025</span>
+                </div>
+                
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>StartupTN Hackathon Winner</h3>
+                    <p>Winner with Project FitCoin at Erode</p>
+                    <span class="achievement-date">May 2023</span>
+                </div>
+                
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>IEEE Project EXPO Top 10</h3>
+                    <p>Top 10 Finalists with Project FitCoin</p>
+                    <span class="achievement-date">October 2023</span>
+                </div>
+                
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Play Store Success</h3>
+                    <p>4.7-star reviews and 500+ downloads for CodePlay Connect</p>
+                    <span class="achievement-date">2023</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <!-- Contact Header -->
+                <div class="contact-header">
+                    <span class="contact-badge">Let's Connect</span>
+                    <h2>Ready to Build Something Amazing?</h2>
+                    <p class="contact-subtitle">Whether you have a groundbreaking idea or just want to chat about technology, I'm here to help bring your vision to life.</p>
+                </div>
+                
+                <!-- Contact Cards Grid -->
+                <div class="contact-cards-grid">
+                    <!-- Primary Contact Card -->
+                    <div class="contact-card">
+                        <div class="card-glow"></div>
+                        <div class="card-content">
+                            <div class="card-icon-wrapper">
+                                <div class="card-icon">
+                                    <i class="fas fa-rocket"></i>
+                                </div>
+                                <div class="icon-particles">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <h3>Start Your Project</h3>
+                            <p>Ready to turn your idea into reality? Let's discuss your project requirements and create something extraordinary together.</p>
+                            <a href="mailto:shyamgsundhar@gmail.com?subject=Let's Build Something Amazing&body=Hi Shyam,%0A%0AI have an exciting project idea and would love to discuss it with you." class="card-button primary">
+                                <span>Email Me</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <div class="card-stats">
+                                <div class="stat">
+                                    <span class="stat-number">24hrs</span>
+                                    <span class="stat-label">Response Time</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">10+</span>
+                                    <span class="stat-label">Projects Delivered</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Quick Call Card -->
+                    <div class="contact-card">
+                        <div class="card-content">
+                            <div class="card-icon-wrapper">
+                                <div class="card-icon">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                            </div>
+                            <h3>Quick Call</h3>
+                            <p>Need to discuss something urgent? Give me a call during my available hours.</p>
+                            <a href="tel:+919080435234" class="card-button">
+                                <span>Call Now</span>
+                                <i class="fas fa-phone"></i>
+                            </a>
+                            <div class="availability">
+                                <div class="status-dot online"></div>
+                                <span>Available Mon-Fri, 9AM-6PM IST</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Location Card -->
+                    <div class="contact-card">
+                        <div class="card-content">
+                            <div class="card-icon-wrapper">
+                                <div class="card-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                            </div>
+                            <h3>Based In</h3>
+                            <p>Located in the tech hub of South India, open to remote collaborations worldwide.</p>
+                            <div class="location-info">
+                                <span class="location">Coimbatore, Tamil Nadu</span>
+                                <span class="country">India 🇮🇳</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Social Connect Section -->
+                <div class="social-connect-section">
+                    <div class="section-header">
+                        <h3>Connect & Follow</h3>
+                        <p>Stay updated with my latest work and tech insights</p>
+                    </div>
+                    
+                    <div class="social-platforms-grid">
+                        <a href="https://github.com/shyamgsundhar" target="_blank" class="social-platform github" data-platform="github">
+                            <div class="platform-header">
+                                <div class="platform-icon">
+                                    <i class="fab fa-github"></i>
+                                </div>
+                                <div class="platform-info">
+                                    <h4>GitHub</h4>
+                                    <span>@shyamgsundhar</span>
+                                </div>
+                                <div class="platform-arrow">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </div>
+                            </div>
+                            <p>Explore my code repositories, open source contributions, and latest projects.</p>
+                            <div class="platform-stats">
+                                <span>Repositories & Projects</span>
+                            </div>
+                        </a>
+                        
+                        <a href="https://linkedin.com/in/shyamgsundhar" target="_blank" class="social-platform linkedin" data-platform="linkedin">
+                            <div class="platform-header">
+                                <div class="platform-icon">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </div>
+                                <div class="platform-info">
+                                    <h4>LinkedIn</h4>
+                                    <span>@shyamgsundhar</span>
+                                </div>
+                                <div class="platform-arrow">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </div>
+                            </div>
+                            <p>Connect professionally and stay updated with my career journey and insights.</p>
+                            <div class="platform-stats">
+                                <span>Professional Network</span>
+                            </div>
+                        </a>
+                        
+                        <a href="https://medium.com/@shyamgsundhar" target="_blank" class="social-platform medium" data-platform="medium">
+                            <div class="platform-header">
+                                <div class="platform-icon">
+                                    <i class="fab fa-medium-m"></i>
+                                </div>
+                                <div class="platform-info">
+                                    <h4>Medium</h4>
+                                    <span>@shyamgsundhar</span>
+                                </div>
+                                <div class="platform-arrow">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </div>
+                            </div>
+                            <p>Read my technical articles on Flutter development, AI/ML insights, and tech tutorials.</p>
+                            <div class="platform-stats">
+                                <span>Tech Articles & Tutorials</span>
+                            </div>
+                        </a>
+                        
+                        <a href="https://leetcode.com/shyamgsundhar" target="_blank" class="social-platform leetcode" data-platform="leetcode">
+                            <div class="platform-header">
+                                <div class="platform-icon">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <div class="platform-info">
+                                    <h4>LeetCode</h4>
+                                    <span>@shyamgsundhar</span>
+                                </div>
+                                <div class="platform-arrow">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </div>
+                            </div>
+                            <p>Check out my problem-solving skills and algorithmic thinking in action.</p>
+                            <div class="platform-stats">
+                                <span>Coding Practice</span>
+                            </div>
+                        </a>
+                        
+                        <a href="https://instagram.com/shyamgsundhar" target="_blank" class="social-platform instagram" data-platform="instagram">
+                            <div class="platform-header">
+                                <div class="platform-icon">
+                                    <i class="fab fa-instagram"></i>
+                                </div>
+                                <div class="platform-info">
+                                    <h4>Instagram</h4>
+                                    <span>@shyamgsundhar</span>
+                                </div>
+                                <div class="platform-arrow">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </div>
+                            </div>
+                            <p>Behind-the-scenes glimpses of my development journey and tech life.</p>
+                            <div class="platform-stats">
+                                <span>Life & Tech Stories</span>
+                            </div>
+                        </a>
+                        
+                        <a href="https://x.com/shyamgsundhar" target="_blank" class="social-platform twitter" data-platform="twitter">
+                            <div class="platform-header">
+                                <div class="platform-icon">
+                                    <i class="fab fa-twitter"></i>
+                                </div>
+                                <div class="platform-info">
+                                    <h4>X (Twitter)</h4>
+                                    <span>@shyamgsundhar</span>
+                                </div>
+                                <div class="platform-arrow">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </div>
+                            </div>
+                            <p>Real-time thoughts on technology, development trends, and industry insights.</p>
+                            <div class="platform-stats">
+                                <span>Tech Thoughts</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Call to Action Banner -->
+                <div class="contact-cta-banner">
+                    <div class="cta-background">
+                        <div class="gradient-blob blob-1"></div>
+                        <div class="gradient-blob blob-2"></div>
+                        <div class="gradient-blob blob-3"></div>
+                    </div>
+                    <div class="cta-content">
+                        <div class="cta-text">
+                            <h3>Let's Create Something Extraordinary</h3>
+                            <p>From Flutter apps to AI solutions, I'm passionate about turning innovative ideas into powerful digital experiences.</p>
+                        </div>
+                        <div class="cta-actions">
+                            <a href="mailto:shyamgsundhar@gmail.com?subject=Partnership Opportunity" class="cta-btn primary">
+                                <i class="fas fa-handshake"></i>
+                                <span>Let's Collaborate</span>
+                            </a>
+                            <a href="#about" class="cta-btn secondary">
+                                <i class="fas fa-user-circle"></i>
+                                <span>Learn More</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Shyam Sundhar G. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/components.js"></script>
+</body>
+</html>
